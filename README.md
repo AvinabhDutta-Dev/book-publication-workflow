@@ -8,20 +8,11 @@
 
 # Automated Book Publication Workflow
 
-<p align="center">
-  <a href="https://github.com/AvinabhDutta-Dev/book-publication-workflow">
-    <img src="https://img.shields.io/github/license/AvinabhDutta-Dev/book-publication-workflow?style=flat-square&label=License" alt="Repository license" />
-  </a>
-  <a href="https://github.com/AvinabhDutta-Dev/book-publication-workflow/commits/main">
-    <img src="https://img.shields.io/github/last-commit/AvinabhDutta-Dev/book-publication-workflow?style=flat-square&label=Last%20commit" alt="Last commit" />
-  </a>
-  <a href="https://github.com/AvinabhDutta-Dev/book-publication-workflow">
-    <img src="https://img.shields.io/github/languages/top/AvinabhDutta-Dev/book-publication-workflow?style=flat-square" alt="Top programming language" />
-  </a>
-  <a href="https://github.com/AvinabhDutta-Dev/book-publication-workflow">
-    <img src="https://img.shields.io/github/repo-size/AvinabhDutta-Dev/book-publication-workflow?style=flat-square&label=Repo%20size" alt="Repository size" />
-  </a>
-</p>
+[![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Playwright](https://img.shields.io/badge/Playwright-Browser%20Automation-2EAD33?logo=playwright&logoColor=white)](https://playwright.dev/)
+[![Google Gemini API](https://img.shields.io/badge/LLM-Google%20Gemini%20API-8E75B2?logo=googlegemini&logoColor=white)](https://ai.google.dev/gemini-api)
+[![ChromaDB](https://img.shields.io/badge/Vector%20Database-ChromaDB-FF6F61?logo=chroma&logoColor=white)](https://www.trychroma.com/)
+[![python-dotenv](https://img.shields.io/badge/Config-python--dotenv-3776AB?logo=python&logoColor=white)](https://pypi.org/project/python-dotenv/)
 
 A smart, AI-driven content pipeline that simulates the real-world publishing workflow — automating content scraping, intelligent rewriting, human-in-the-loop editing, and versioned storage of book chapters.
 
