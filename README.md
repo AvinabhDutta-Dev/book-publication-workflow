@@ -35,14 +35,7 @@ Developed as part of the AI Internship assignment for **Softnerve Technology**.
 | Tool | Purpose |
 |---|---|
 | <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="20" height="20" /> Python | Core scripting language |
-| <a href="https://playwright.dev/">
-  <img
-    src="docs/images/playwright-logo.svg"
-    alt="Playwright logo"
-    width="24"
-    height="24"
-  />
-</a> `playwright` | Browser automation, page text extraction, and screenshots |
+| <img src="docs/images/playwright-logo.svg" alt="Playwright logo" width="24" height="24" /> `playwright` | Browser automation, page text extraction, and screenshots |
 | <img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="Google Gemini" width="20" height="20" /> Gemini API (`google-generativeai`) | AI writing and review agents (legacy SDK/model in current code) |
 | `chromadb` | Store and query a chapter version |
 | `python-dotenv` | Load the API key from `.env` |
