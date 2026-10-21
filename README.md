@@ -13,6 +13,7 @@
 [![Google Gemini API](https://img.shields.io/badge/LLM-Google%20Gemini%20API-8E75B2?logo=googlegemini&logoColor=white)](https://ai.google.dev/gemini-api)
 [![ChromaDB](https://img.shields.io/badge/Vector%20Database-ChromaDB-FF6F61?logo=chroma&logoColor=white)](https://www.trychroma.com/)
 [![python-dotenv](https://img.shields.io/badge/Config-python--dotenv-3776AB?logo=python&logoColor=white)](https://pypi.org/project/python-dotenv/)
+[![Playwright](https://img.shields.io/badge/Playwright-Browser%20Automation-2EAD33?style=flat-square)](https://playwright.dev/)
 
 A smart, AI-driven content pipeline that simulates the real-world publishing workflow — automating content scraping, intelligent rewriting, human-in-the-loop editing, and versioned storage of book chapters.
 
@@ -34,7 +35,7 @@ Developed as part of the AI Internship assignment for **Softnerve Technology**.
 | Tool | Purpose |
 |---|---|
 | <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="20" height="20" /> Python | Core scripting language |
-| [![Playwright](https://img.shields.io/badge/Playwright-Browser%20Automation-2EAD33?style=flat-square)](https://playwright.dev/) `playwright` | Browser automation, page text extraction, and screenshots |
+|  `playwright` | Browser automation, page text extraction, and screenshots |
 | <img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="Google Gemini" width="20" height="20" /> Gemini API (`google-generativeai`) | AI writing and review agents (legacy SDK/model in current code) |
 | `chromadb` | Store and query a chapter version |
 | `python-dotenv` | Load the API key from `.env` |
