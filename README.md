@@ -1,4 +1,27 @@
+<p align="center">
+  <img
+    src="docs/images/book-publication-workflow-hero.png"
+    alt="Automated book publication workflow from source chapter scraping through Gemini writing and review, human feedback, and ChromaDB storage"
+    width="100%"
+  />
+</p>
+
 # Automated Book Publication Workflow
+
+<p align="center">
+  <a href="https://github.com/AvinabhDutta-Dev/book-publication-workflow">
+    <img src="https://img.shields.io/github/license/AvinabhDutta-Dev/book-publication-workflow?style=flat-square&label=License" alt="Repository license" />
+  </a>
+  <a href="https://github.com/AvinabhDutta-Dev/book-publication-workflow/commits/main">
+    <img src="https://img.shields.io/github/last-commit/AvinabhDutta-Dev/book-publication-workflow?style=flat-square&label=Last%20commit" alt="Last commit" />
+  </a>
+  <a href="https://github.com/AvinabhDutta-Dev/book-publication-workflow">
+    <img src="https://img.shields.io/github/languages/top/AvinabhDutta-Dev/book-publication-workflow?style=flat-square" alt="Top programming language" />
+  </a>
+  <a href="https://github.com/AvinabhDutta-Dev/book-publication-workflow">
+    <img src="https://img.shields.io/github/repo-size/AvinabhDutta-Dev/book-publication-workflow?style=flat-square&label=Repo%20size" alt="Repository size" />
+  </a>
+</p>
 
 A smart, AI-driven content pipeline that simulates the real-world publishing workflow — automating content scraping, intelligent rewriting, human-in-the-loop editing, and versioned storage of book chapters.
 
@@ -19,11 +42,11 @@ Developed as part of the AI Internship assignment for **Softnerve Technology**.
 
 | Tool | Purpose |
 |---|---|
-| `Python` | Core scripting language |
-| `Playwright` | Browser automation & scraping |
-| `Gemini API` (`google-generativeai`) | LLM for AI writer & reviewer agents |
-| `ChromaDB` | Versioned vector storage |
-| `python-dotenv` | Environment variable management |
+| <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="20" height="20" /> Python | Core scripting language |
+| <img src="https://cdn.simpleicons.org/playwright/2EAD33" alt="Playwright" width="20" height="20" /> `playwright` | Browser automation, page text extraction, and screenshots |
+| <img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="Google Gemini" width="20" height="20" /> Gemini API (`google-generativeai`) | AI writing and review agents (legacy SDK/model in current code) |
+| `chromadb` | Store and query a chapter version |
+| `python-dotenv` | Load the API key from `.env` |
 
 ---
 
@@ -57,6 +80,17 @@ book_publication_workflow/
 3. **AI Reviewer Agent** — Refines grammar, tone, and structure for publication-readiness.
 4. **Human-in-the-Loop** — Prompts for feedback/suggestions via CLI after the AI passes.
 5. **Versioned Storage** — Stores the final version in ChromaDB and saves each stage as a `.txt` file in `data/`.
+
+---
+
+---
+
+<details>
+  <summary>View the captured source-page screenshot</summary>
+  <p align="center">
+    <img src="screenshots/chapter1.png" alt="Full-page screenshot captured by the Playwright source scraper" width="85%" />
+  </p>
+</details>
 
 ---
 
