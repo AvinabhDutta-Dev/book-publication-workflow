@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="700" viewBox="0 0 2200 700">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1424"/><stop offset="1" stop-color="#14253A"/></linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#60E1D1"/><stop offset="1" stop-color="#2AA8B5"/></linearGradient>
+  <linearGradient id="coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFB18B"/><stop offset="1" stop-color="#F17668"/></linearGradient>
+  <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF9EE"/><stop offset="1" stop-color="#E7F0EF"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#020817" flood-opacity=".45"/></filter>
+  <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse"><path d="M46 0H0V46" fill="none" stroke="#A8C6DD" stroke-opacity=".055" stroke-width="1"/></pattern>
+</defs>
+<rect width="2200" height="700" fill="url(#bg)"/>
+<rect width="2200" height="700" fill="url(#grid)"/>
+<circle cx="1960" cy="90" r="350" fill="#35B5C2" opacity=".075"/>
+<circle cx="2100" cy="610" r="300" fill="#F17668" opacity=".07"/>
+<path d="M0 615 C360 545, 650 740, 1030 620 S1720 525, 2200 640" fill="none" stroke="#60E1D1" stroke-opacity=".13" stroke-width="2"/>
+
+<!-- Left editorial title -->
+<rect x="95" y="78" width="385" height="42" rx="21" fill="#20364D" stroke="#49647D" stroke-width="1.4"/>
+<circle cx="120" cy="99" r="6" fill="#60E1D1"/>
+<text x="140" y="106" fill="#B7D0E3" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2.8">AI-ASSISTED EDITORIAL PIPELINE</text>
+<text x="95" y="205" fill="#FFF8EC" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" letter-spacing="-.8">FROM RAW CHAPTER</text>
+<text x="95" y="278" fill="#FFF8EC" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" letter-spacing="-.8">TO <tspan fill="#60E1D1">EDITOR-REVIEWED</tspan></text>
+<text x="95" y="351" fill="#FFF8EC" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" letter-spacing="-.8">PAGES</text>
+<text x="99" y="405" fill="#AFC2D5" font-family="Arial, Helvetica, sans-serif" font-size="24">Scrape a source chapter, rewrite and review with Gemini,</text>
+<text x="99" y="439" fill="#AFC2D5" font-family="Arial, Helvetica, sans-serif" font-size="24">then add a human feedback step and store versions.</text>
+
+<!-- Process rail -->
+<g font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="16" letter-spacing="1.1">
+  <rect x="96" y="504" width="152" height="49" rx="24" fill="#183B4A" stroke="#2D8794"/><text x="172" y="534" text-anchor="middle" fill="#75E8D7">01  SCRAPE</text>
+  <path d="M255 528h25" stroke="#6ABCBF" stroke-width="2.5"/><path d="M273 520l9 8-9 8" fill="none" stroke="#6ABCBF" stroke-width="2.5"/>
+  <rect x="290" y="504" width="164" height="49" rx="24" fill="#3A2E3B" stroke="#9C6266"/><text x="372" y="534" text-anchor="middle" fill="#FFB18B">02  REWRITE</text>
+  <path d="M461 528h25" stroke="#6ABCBF" stroke-width="2.5"/><path d="M479 520l9 8-9 8" fill="none" stroke="#6ABCBF" stroke-width="2.5"/>
+  <rect x="496" y="504" width="155" height="49" rx="24" fill="#183B4A" stroke="#2D8794"/><text x="573" y="534" text-anchor="middle" fill="#75E8D7">03  REVIEW</text>
+  <path d="M658 528h25" stroke="#6ABCBF" stroke-width="2.5"/><path d="M676 520l9 8-9 8" fill="none" stroke="#6ABCBF" stroke-width="2.5"/>
+  <rect x="693" y="504" width="147" height="49" rx="24" fill="#3A2E3B" stroke="#9C6266"/><text x="766" y="534" text-anchor="middle" fill="#FFB18B">04  HUMAN</text>
+  <path d="M847 528h25" stroke="#6ABCBF" stroke-width="2.5"/><path d="M865 520l9 8-9 8" fill="none" stroke="#6ABCBF" stroke-width="2.5"/>
+  <rect x="885" y="504" width="149" height="49" rx="24" fill="#183B4A" stroke="#2D8794"/><text x="959" y="534" text-anchor="middle" fill="#75E8D7">05  STORE</text>
+</g>
+<text x="99" y="611" fill="#6D8AA4" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="1.2">HUMAN FEEDBACK REMAINS PART OF THE WORKFLOW</text>
+
+<!-- Right-side flow cards -->
+<!-- Source card -->
+<g filter="url(#shadow)">
+ <rect x="1122" y="163" width="227" height="304" rx="22" fill="#E7EEF0"/>
+ <rect x="1143" y="184" width="185" height="30" rx="8" fill="#D2DFE2"/>
+ <circle cx="1159" cy="199" r="4" fill="#F17668"/><circle cx="1172" cy="199" r="4" fill="#E8B66E"/><circle cx="1185" cy="199" r="4" fill="#60BFAF"/>
+ <text x="1144" y="251" fill="#22364B" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800">WIKISOURCE</text>
+ <path d="M1146 272H1324" stroke="#9EAFB8" stroke-width="2"/>
+ <rect x="1145" y="294" width="171" height="7" rx="3.5" fill="#AFBFC7"/>
+ <rect x="1145" y="314" width="155" height="7" rx="3.5" fill="#AFBFC7"/>
+ <rect x="1145" y="334" width="165" height="7" rx="3.5" fill="#AFBFC7"/>
+ <rect x="1145" y="354" width="131" height="7" rx="3.5" fill="#AFBFC7"/>
+ <rect x="1145" y="385" width="82" height="26" rx="13" fill="#C8E9E4"/>
+ <text x="1186" y="403" fill="#1F706F" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" text-anchor="middle">RAW TEXT</text>
+ <text x="1235" y="445" fill="#536C7D" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle">Chapter + screenshot</text>
+</g>
+<!-- Arrow source to writer -->
+<path d="M1357 316h33" stroke="#60E1D1" stroke-width="3" stroke-linecap="round"/><path d="M1380 306l11 10-11 10" stroke="#60E1D1" stroke-width="3" fill="none"/>
+<!-- Writer card -->
+<g filter="url(#shadow)">
+ <rect x="1400" y="218" width="177" height="200" rx="21" fill="#25384E" stroke="#42627A" stroke-width="1.5"/>
+ <rect x="1455" y="245" width="66" height="66" rx="18" fill="url(#cyan)"/>
+ <path d="M1471 288l28-28 8 8-28 28-12 4z" fill="#173349"/><path d="M1469 301l-2-12 12 2" fill="#173349"/>
+ <text x="1488" y="344" fill="#FFF8EC" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="800" text-anchor="middle">AI WRITER</text>
+ <text x="1488" y="374" fill="#AFC2D5" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle">Gemini rewrite</text>
+ <text x="1488" y="396" fill="#7298AC" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">Clarity + flow</text>
+</g>
+<!-- Arrow writer to reviewer -->
+<path d="M1583 316h32" stroke="#FFAA86" stroke-width="3" stroke-linecap="round"/><path d="M1605 306l11 10-11 10" stroke="#FFAA86" stroke-width="3" fill="none"/>
+<!-- Reviewer card -->
+<g filter="url(#shadow)">
+ <rect x="1625" y="218" width="177" height="200" rx="21" fill="#25384E" stroke="#7B5A66" stroke-width="1.5"/>
+ <rect x="1680" y="245" width="66" height="66" rx="18" fill="url(#coral)"/>
+ <path d="M1696 258h32v38h-32z" fill="#693E46"/><path d="M1703 269h18M1703 278h18M1703 287h12" stroke="#FFF3E7" stroke-width="3" stroke-linecap="round"/>
+ <text x="1713" y="344" fill="#FFF8EC" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="800" text-anchor="middle">AI REVIEWER</text>
+ <text x="1713" y="374" fill="#AFC2D5" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle">Grammar + tone</text>
+ <text x="1713" y="396" fill="#7298AC" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">Refinement pass</text>
+</g>
+<!-- Arrow reviewer to human -->
+<path d="M1808 316h28" stroke="#60E1D1" stroke-width="3" stroke-linecap="round"/><path d="M1827 306l11 10-11 10" stroke="#60E1D1" stroke-width="3" fill="none"/>
+<!-- Human and stored version card -->
+<g filter="url(#shadow)">
+ <rect x="1847" y="174" width="263" height="290" rx="22" fill="#E7EEF0"/>
+ <rect x="1868" y="195" width="221" height="76" rx="15" fill="#D6E8E5"/>
+ <circle cx="1907" cy="232" r="19" fill="#2E6B73"/>
+ <circle cx="1907" cy="225" r="6" fill="#E5F4F1"/><path d="M1894 242c2-12 24-12 26 0" fill="#E5F4F1"/>
+ <text x="1940" y="226" fill="#17364B" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800">HUMAN EDIT</text>
+ <text x="1940" y="249" fill="#567080" font-family="Arial, Helvetica, sans-serif" font-size="13">Accept or suggest</text>
+ <path d="M1886 301h183" stroke="#A6B7BD" stroke-width="2"/>
+ <rect x="1887" y="319" width="179" height="7" rx="3.5" fill="#AFBFC7"/>
+ <rect x="1887" y="339" width="152" height="7" rx="3.5" fill="#AFBFC7"/>
+ <rect x="1887" y="359" width="167" height="7" rx="3.5" fill="#AFBFC7"/>
+ <rect x="1887" y="389" width="156" height="36" rx="12" fill="#183B4A"/>
+ <path d="M1902 405l6 6 12-15" stroke="#60E1D1" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="1930" y="412" fill="#F5F8F4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">VERSION SAVED</text>
+</g>
+<!-- Chroma mini chip -->
+<path d="M1978 465v37" stroke="#60E1D1" stroke-width="2.5" stroke-dasharray="5 5"/>
+<rect x="1880" y="500" width="196" height="59" rx="18" fill="#1A3B50" stroke="#367F8C" stroke-width="1.5"/>
+<g transform="translate(1898,516)"><circle cx="12" cy="13" r="12" fill="#60E1D1" opacity=".95"/><path d="M6 13h12M12 7v12" stroke="#173449" stroke-width="2.5" stroke-linecap="round"/></g>
+<text x="1940" y="524" fill="#F2F8F6" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800">CHROMADB</text>
+<text x="1940" y="543" fill="#9DC1D1" font-family="Arial, Helvetica, sans-serif" font-size="12">Vector-store search</text>
+
+<!-- Footer note -->
+<text x="1119" y="632" fill="#7C9BB0" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="1.2">CONCEPTUAL OVERVIEW · HUMAN FEEDBACK + TEXT FILES + VECTOR STORAGE</text>
+</svg>
