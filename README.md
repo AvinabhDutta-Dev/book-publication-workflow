@@ -37,7 +37,10 @@ Developed as part of the AI Internship assignment for **Softnerve Technology**.
 | <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="20" height="20" /> Python | Core scripting language |
 | <img src="docs/images/playwright-logo.svg" alt="Playwright logo" width="24" height="24" /> `playwright` | Browser automation, page text extraction, and screenshots |
 | <img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="Google Gemini" width="24" height="24" /> Gemini API (`google-generativeai`) | AI writing and review agents (legacy SDK/model in current code) |
-| <img src="https://jsdelivr.net" alt="Chroma Logo" width="24" height="24" /> `chromadb` | Store and query a chapter version |
+| <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org" style="vertical-align: middle; display: inline-block; margin-right: 4px;">
+  <path d="M12 2L2 7l10 5 10-5-10-5z" fill="#F05032"/>
+  <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="#F05032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`chromadb` | Store and query a chapter version |
 | `python-dotenv` | Load the API key from `.env` |
 
 ---
