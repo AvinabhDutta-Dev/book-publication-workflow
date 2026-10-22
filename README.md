@@ -150,6 +150,20 @@ You'll be prompted in the terminal to provide feedback after the AI writes and r
 
 ---
 
+---
+## 🤝 Contributing
+
+Contributions are welcome! You can help improve the workflow,
+fix bugs, enhance documentation, or suggest new features.
+
+- Read the [Contributing Guide](CONTRIBUTING.md).
+- Browse [open issues](https://github.com/AvinabhDutta-Dev/book-publication-workflow/issues).
+- Report a bug or propose an improvement by opening an issue.
+
+For substantial changes, please discuss the idea in an issue before
+submitting a pull request.
+---
+
 ## License & Attribution
 
 This project is licensed under the [Apache License 2.0](LICENSE).
