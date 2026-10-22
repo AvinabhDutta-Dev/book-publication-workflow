@@ -152,7 +152,10 @@ You'll be prompted in the terminal to provide feedback after the AI writes and r
 
 ## License & Attribution
 
-This project was created for evaluation purposes as part of an AI internship assignment at Softnerve Technology. All rights are retained by the developer. No commercial use is intended or permitted.
+This project is licensed under the [Apache License 2.0](LICENSE).
+
+You are welcome to use, modify, and redistribute this project
+in accordance with the terms of the license.
 
 ## Acknowledgements
 
