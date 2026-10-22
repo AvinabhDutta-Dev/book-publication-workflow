@@ -11,7 +11,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Playwright](https://img.shields.io/badge/Playwright-Browser%20Automation-2EAD33?logo=playwright&logoColor=white)](https://playwright.dev/)
 [![Google Gemini API](https://img.shields.io/badge/LLM-Google%20Gemini%20API-8E75B2?logo=googlegemini&logoColor=white)](https://ai.google.dev/gemini-api)
-[![ChromaDB](https://img.shields.io/badge/Vector%20Database-ChromaDB-FF6F61?logo=chroma&logoColor=white)](https://www.trychroma.com/)
+[![ChromaDB](https://img.shields.io/badge/Vector%20Database-ChromaDB-FF6F61?logoColor=white)](https://www.trychroma.com/)
 [![python-dotenv](https://img.shields.io/badge/Config-python--dotenv-3776AB?logo=python&logoColor=white)](https://pypi.org/project/python-dotenv/)
 
 A smart, AI-driven content pipeline that simulates the real-world publishing workflow — automating content scraping, intelligent rewriting, human-in-the-loop editing, and versioned storage of book chapters.
