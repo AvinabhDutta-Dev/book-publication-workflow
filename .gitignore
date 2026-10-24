@@ -1,12 +1,17 @@
+# Secrets
+.env
+
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
 .venv/
 venv/
 
-# Environment
-.env
+# Local vector store (rebuilt on each run)
+storage/chroma_db/
 
-# OS
+# OS / editor
 .DS_Store
+.idea/
+.vscode/
 Thumbs.db
