@@ -8,6 +8,7 @@
 
 # Automated Book Publication Workflow
 
+[![Tests](https://github.com/AvinabhDutta-Dev/book-publication-workflow/actions/workflows/tests.yml/badge.svg)](https://github.com/AvinabhDutta-Dev/book-publication-workflow/actions/workflows/tests.yml)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Playwright](https://img.shields.io/badge/Playwright-Browser%20Automation-2EAD33?logo=playwright&logoColor=white)](https://playwright.dev/)
 [![Google Gemini API](https://img.shields.io/badge/LLM-Google%20Gemini%20API-8E75B2?logo=googlegemini&logoColor=white)](https://ai.google.dev/gemini-api)

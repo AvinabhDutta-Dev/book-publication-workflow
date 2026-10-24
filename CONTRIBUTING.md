@@ -6,7 +6,7 @@ Contributions of code, documentation, bug reports, tests, and feature ideas are 
 
 ## Before You Start
 
-- Check existing [issues](https://github.com/AvinabhDutta-Dev/book-publication-workflow/issues) to see whether the problem or idea has already been discussed.
+- Check existing [issues](https://github.com/AvinabhDutta-Dev/book-publication-workflow/issues) to see whether the problem or idea has already been discussed. When you open a new one, pick the bug report or feature request form so the details we need are in one place.
 - For a significant change, open an issue first so we can discuss the approach.
 - For small documentation fixes, you can submit a pull request directly.
 
@@ -56,6 +56,7 @@ Contributions of code, documentation, bug reports, tests, and feature ideas are 
 - Preserve the meaning of source text when improving the writing workflow.
 - Update documentation when behavior or setup instructions change.
 - Add or update tests when possible.
+- Run the tests before you open a pull request: `python -m unittest discover -s tests`. They replace Gemini and the browser with stand-ins, so they need no API key. The same tests run automatically on every pull request.
 - Do not commit generated outputs or personal credentials unless they are intentionally required.
 
 ## Submitting a Pull Request
@@ -66,7 +67,7 @@ Contributions of code, documentation, bug reports, tests, and feature ideas are 
 4. Push the branch to your fork.
 5. Open a pull request against the `main` branch of this repository.
 
-In your pull request, explain:
+The pull request form will ask for the points below. In your pull request, explain:
 - What changed and why.
 - How you tested the change.
 - Any limitations, configuration changes, or other considerations.
