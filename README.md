@@ -58,8 +58,10 @@ book-publication-workflow/
 │   └── rl_search.py         # Placeholder for RL-based version retrieval
 ├── tests/
 │   └── test_pipeline.py     # Offline tests (no API key or network needed)
-├── data/                    # Pipeline outputs (original, spun, reviewed, final versions)
-├── screenshots/             # Scraped page screenshots
+├── examples/
+│   └── final_chapter.txt    # Sample output from a real run (all four stages)
+├── data/                    # Pipeline outputs (generated, git-ignored)
+├── screenshots/             # Page screenshots (generated, git-ignored)
 ├── config.py                # Paths, default chapter URL, Gemini model name
 ├── main.py                  # Orchestrates the full pipeline
 ├── requirements.txt
@@ -79,9 +81,9 @@ book-publication-workflow/
 ---
 
 <details>
-  <summary>View the captured source-page screenshot</summary>
+  <summary>View a sample screenshot of the source page</summary>
   <p align="center">
-    <img src="screenshots/chapter.png" alt="Full-page screenshot captured by the Playwright source scraper" width="85%" />
+    <img src="docs/images/chapter-screenshot.png" alt="Full-page screenshot captured by the Playwright source scraper" width="85%" />
   </p>
 </details>
 
@@ -143,7 +145,7 @@ The first run downloads ChromaDB's default embedding model (about 80 MB), so it 
 | `screenshots/chapter.png` | Screenshot of the scraped source page |
 | `storage/chroma_db/` | ChromaDB database (not committed) |
 
-Apart from `suggestions.txt` and the database, these files are overwritten on every run. ChromaDB keeps one set of versions per run, labelled with a UTC timestamp.
+These files are generated on each run and are git-ignored, so running the pipeline leaves nothing to commit. A real sample run is saved in [`examples/final_chapter.txt`](examples/final_chapter.txt). Apart from `suggestions.txt` and the database, the files are overwritten on every run. ChromaDB keeps one set of versions per run, labelled with a UTC timestamp.
 
 ---
 
@@ -172,7 +174,7 @@ Apart from `suggestions.txt` and the database, these files are overwritten on ev
 ### Known limitations
 
 - **Long chapters.** The whole chapter is sent to Gemini in one request per step. Gemini's output limit is about 65,000 tokens, so a very long chapter fails with a clear error instead of being silently cut off.
-- **Scraper is tuned for Wikisource.** It reads the `#mw-content-text` element. On other sites it falls back to all text on the page, which can include menus and footers.
+- **Scraper is tuned for Wikisource.** It reads the `#mw-content-text` element. Wikisource's chapter header (title and previous/next links) is still included in the text. On other sites it falls back to all text on the page, which can include menus and footers.
 - **Feedback is applied by the model.** Nothing checks that Gemini followed your suggestion, and each round re-sends the whole chapter.
 - **One chapter per run.** There is no batch mode for a whole book.
 
