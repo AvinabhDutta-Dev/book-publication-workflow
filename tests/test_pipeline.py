@@ -3,6 +3,7 @@ check the pipeline logic without an API key or network access.
 
 Run from the project root:  python -m unittest discover -s tests -v
 """
+import gc
 import os
 import subprocess
 import sys
@@ -45,13 +46,37 @@ class HashEmbedding(EmbeddingFunction):
         return HashEmbedding()
 
 
+_TEST_CHROMA_CLIENTS = []
+
+
 def fake_get_collection():
     client = chromadb.PersistentClient(
         path=str(config.CHROMA_DIR), settings=Settings(anonymized_telemetry=False)
     )
+    _TEST_CHROMA_CLIENTS.append(client)  # so the test can release it later
     return client.get_or_create_collection(
         chromadb_utils.COLLECTION_NAME, embedding_function=HashEmbedding()
     )
+
+
+def close_test_chroma_clients():
+    """Release ChromaDB's open database files before temp folders are deleted.
+
+    Windows cannot delete a file that is still open, so a client left open
+    makes the temporary folder cleanup fail with WinError 32.
+    """
+    while _TEST_CHROMA_CLIENTS:
+        try:
+            _TEST_CHROMA_CLIENTS.pop().close()
+        except Exception:
+            pass
+    try:
+        from chromadb.api.client import SharedSystemClient
+
+        SharedSystemClient.clear_system_cache()
+    except Exception:
+        pass
+    gc.collect()
 
 
 class FakeResponse:
@@ -72,7 +97,9 @@ class FakeGemini:
 
 class TempProject(unittest.TestCase):
     def setUp(self):
-        self.tmp = tempfile.TemporaryDirectory()
+        # ignore_cleanup_errors: if Windows still holds a database file for a
+        # moment, leaving a temp folder behind must not fail the test.
+        self.tmp = tempfile.TemporaryDirectory(ignore_cleanup_errors=True)
         root = Path(self.tmp.name)
         patches = [
             mock.patch.object(config, "DATA_DIR", root / "data"),
@@ -85,6 +112,7 @@ class TempProject(unittest.TestCase):
             p.start()
             self.addCleanup(p.stop)
         self.addCleanup(self.tmp.cleanup)
+        self.addCleanup(close_test_chroma_clients)  # runs before tmp.cleanup
         self.root = root
         self.fake = FakeGemini()
         gemini_client._client = self.fake
@@ -202,7 +230,7 @@ class EndToEndTests(TempProject):
 
 class PersistenceTest(unittest.TestCase):
     def test_versions_survive_a_process_restart(self):
-        with tempfile.TemporaryDirectory() as tmp:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp:
             script = f"""
 import sys
 sys.path.insert(0, {str(ROOT)!r})
